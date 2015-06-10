@@ -131,7 +131,7 @@ class IndexController extends Controller {
             if ($img['photo']){
                 unlink('Public/'.$img['photo']);
             }
-        }
+        }else{$this->error($upload->getError());}
         if ($exixtUser){
             M('message')->where(array(
                 "openid"=>session('info')['openid']

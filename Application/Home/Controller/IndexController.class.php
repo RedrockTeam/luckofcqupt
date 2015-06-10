@@ -139,7 +139,7 @@ class IndexController extends Controller {
         }
         if($data['contact'] == '邮箱') {
             if(strlen($data['way']) == 0) {
-
+                $this->error('邮箱不能为空');
             }
             $pattern = '/^(.*)@(.*)\.(.*)/';
             if(preg_match($pattern, $data['way']))

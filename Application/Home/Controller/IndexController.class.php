@@ -141,25 +141,25 @@ class IndexController extends Controller {
         }
             $this->success('完善信息成功');
     }
-//    public function _after_perfectInfo(){
-//        $rel = M('message')->where(array(
-//            "openid" => session('info')['openid'],
-//        ))->find();
-//        $bool = true;
-//        for ($i=0; $i<9; $i++){
-//            if (!$rel[$i]) {
-//                $bool = false;
-//                break;
-//            }
-//        }
-//        if ($bool) {
-//            $data['perfect'] = 1;
-//        }
-//        $data['headimgurl'] = $this->getHeadImgUrl(session('info')['openid']);
-//        M('message')->where(array(
-//            'openid' => session('info')['openid'],
-//        ))->data($data)->save();
-//    }
+    public function _after_perfectInfo(){
+        $rel = M('message')->where(array(
+            "openid" => session('info')['openid'],
+        ))->find();
+        $bool = true;
+        for ($i=0; $i<9; $i++){
+            if (!$rel[$i]) {
+                $bool = false;
+                break;
+            }
+        }
+        if ($bool) {
+            $data['perfect'] = 1;
+        }
+        $data['headimgurl'] = $this->getHeadImgUrl(session('info')['openid']);
+        M('message')->where(array(
+            'openid' => session('info')['openid'],
+        ))->data($data)->save();
+    }
 
     //完善信息页面
     public function information(){

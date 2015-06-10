@@ -5,11 +5,12 @@ class IndexController extends Controller {
 
     //显示主页
     public function index(){
+        $this->beforeIndex();
         $this->display("index");
     }
 
     //查看来访者是否绑定学号,未绑定则跳转到绑定学号页面,绑定了的话将用户openid存储起来
-    public function _before_index(){
+    public function beforeIndex(){
         $openid = I('get.openid');
         $info = $this->bindVerify($openid);
         if ($info->status != 200) {

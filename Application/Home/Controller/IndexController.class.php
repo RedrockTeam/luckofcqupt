@@ -103,9 +103,7 @@ class IndexController extends Controller {
         $exixtUser = M('message')->where(array(
             "openid" => session('info')['openid']
         ))->select();
-        $img = M('message')->where(array(
-            'openid'=>session('info')['openid']
-        ))->field('photo')->find();
+
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize = 3145728 ;// 设置附件上传大小
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
@@ -128,9 +126,11 @@ class IndexController extends Controller {
         if ($info) {
             $data['photo'] = '../../Public/photos/'.$imgName.'.'.$info['photo']['ext'];
             $data['has_img'] = 1;
-            if ($img['photo']){
-                unlink('Public/'.$img['photo']);
-            }
+            $where = array(
+                'openid' => session('info.openid')
+            );
+            M('message')->where($where)->save($data);
+
         }else{$this->error($upload->getError());}
         if ($exixtUser){
             M('message')->where(array(

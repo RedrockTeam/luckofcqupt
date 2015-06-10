@@ -126,11 +126,8 @@ class IndexController extends Controller {
             $where = array(
                 'openid' => session("info")['openid']
             );
-            print_r($where);
-           print_r(M('message')->where($where)->save($data));
-            return;
-
-        }else{$this->error($upload->getError());}
+             M('message')->where($where)->save($data);
+        }
         if ($exixtUser){
             M('message')->where(array(
                 "openid"=>session('info')['openid']

@@ -94,6 +94,11 @@ class IndexController extends Controller {
             $ajax['data'] = $data;
             $this->ajaxReturn($ajax);
         }
+        $flag = 0;
+        if(strlen($info['hometown']) == 0) {
+            $flag = 1;
+        }
+        $this->assign('flag', $flag);
         $this->assign('friend', $data);
         $this->display();
     }
@@ -120,6 +125,23 @@ class IndexController extends Controller {
             'way' => I('post.ucv'),
             'introduce' => I('post.introduce'),
         );
+        if($data['contact'] == 'QQ') {
+            if(!is_numeric($data['way']) || strlen($data['way']) > 11)
+                $this->error('QQ号填写错误');
+        }
+        if($data['contact'] == '微信号') {
+            if(strlen($data['way']) == 0)
+                $this->error('微信号不能为空');
+        }
+        if($data['contact'] == '电话号码') {
+            if(!is_numeric($data['way']) || strlen($data['way']) != 11)
+                $this->error('电话号码填写错误');
+        }
+        if($data['contact'] == '邮箱') {
+            $pattern = '/^(.*)@(.*)\.(.*)/';
+            if(preg_match($pattern, $data['way']))
+                $this->error('邮箱填写错误');
+        }
         if ($info) {
             foreach($info as $file) {
                 $data['photo'] = '../../Public/photos/'. $file['savepath'] . $file['savename'];

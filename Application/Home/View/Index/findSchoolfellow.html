@@ -52,6 +52,10 @@
 </div>
 </body>
 <script>
+    var flag = {$flag};
+    if(flag == 1) {
+        alert('你还没有完善个人信息, 完善信息能更容易匹配周围的人哦~');
+    }
     var type_path = '{:U('Index/findSchoolfellow')}';
     var people = '{:U('Index/showDetail')}';
 </script>

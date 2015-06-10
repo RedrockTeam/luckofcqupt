@@ -107,10 +107,7 @@ class IndexController extends Controller {
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize = 3145728 ;// 设置附件上传大小
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-        $upload->rootPath = "./Public/";
-        $upload->savePath = '/photos/'; // 设置附件上传目录
-        $upload->saveName = $imgName;
-        $upload->autoSub = false;
+        $upload->rootPath  =  'Public/photos/';
         // 上传文件
         $info = $upload->upload();
         $data = array(
@@ -127,7 +124,7 @@ class IndexController extends Controller {
             $data['photo'] = '../../Public/photos/'.$imgName.'.'.$info['photo']['ext'];
             $data['has_img'] = 1;
             $where = array(
-                'openid' => session('info.openid')
+                'openid' => session("info")['openid']
             );
             M('message')->where($where)->save($data);
 

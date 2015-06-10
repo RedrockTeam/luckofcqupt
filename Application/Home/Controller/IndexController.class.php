@@ -142,7 +142,7 @@ class IndexController extends Controller {
                 $this->error('邮箱不能为空');
             }
             $pattern = '/^(.*)@(.*)\.(.*)/';
-            if(preg_match($pattern, $data['way']))
+            if(!preg_match($pattern, $data['way']))
                 $this->error('邮箱填写错误');
         }
         if ($info) {

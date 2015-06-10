@@ -14,7 +14,7 @@ class IndexController extends Controller {
         $openid = I('get.openid');
         $info = $this->bindVerify($openid);
         if ($info->status != 200) {
-            redirect("http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Bind/Bind/bind/openid/".session('openid')."/token/gh_68f0a1ffc303.html", 3, "请先绑定学号！3秒钟后跳转到绑定学号页面...");
+            $this->error("请先绑定学号！3秒钟后跳转到绑定学号页面...", 3, "http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Bind/Bind/bind/openid/".session('openid')."/token/gh_68f0a1ffc303.html");
         }
         else{
             session('info',array(

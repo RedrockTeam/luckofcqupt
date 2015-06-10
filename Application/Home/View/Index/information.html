@@ -119,10 +119,10 @@
                     </span>
                     <i class="s-arrow"></i></div>
                 <select name="connect"  required="required"  data-tag="spec" class="select_cahnge js-c_way">
-                    <option value="QQ">QQ</option>
-                    <option value="微信号">微信号</option>
-                    <option value="电话号码">电话号码</option>
-                    <option value="邮箱">邮箱</option>
+                    <option value="QQ" {$info[0]['contact'] == 'QQ'? "selected='selected'" : ''}>QQ</option>
+                    <option value="微信号" {$info[0]['contact'] == '微信号'? "selected='selected'" : ''}>微信号</option>
+                    <option value="电话号码" {$info[0]['contact'] == '电话号码'? "selected='selected'" : ''}>电话号码</option>
+                    <option value="邮箱" {$info[0]['contact'] == '邮箱'? "selected='selected'" : ''}>邮箱</option>
                 </select>
             </div>
             <div class="s-c_way">

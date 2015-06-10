@@ -125,6 +125,9 @@ class IndexController extends Controller {
             'way' => trim(I('post.ucv')),
             'introduce' => trim(I('post.introduce')),
         );
+        if(strlen($data['name'])) {
+            $this->error('姓名不能为空');
+        }
         if($data['contact'] == 'QQ') {
             if(!is_numeric($data['way']) || strlen($data['way']) > 11)
                 $this->error('QQ号填写错误');

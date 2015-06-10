@@ -116,14 +116,14 @@ class IndexController extends Controller {
         // 上传文件
         $info = $upload->upload();
         $data = array(
-            "name" => I('post.uname'),
-            "sex" => I('post.ugender'),
-            "college" => I("post.college"),
-            "stuid" => session('info')['stuid'],
-            "hometown" => I('post.hometown'),
-            'contact' => I('post.connect'),
-            'way' => I('post.ucv'),
-            'introduce' => I('post.introduce'),
+            "name" => trim(I('post.uname')),
+            "sex" => trim(I('post.ugender')),
+            "college" => trim(I("post.college")),
+            "stuid" => trim(session('info')['stuid']),
+            "hometown" => trim(I('post.hometown')),
+            'contact' => trim(I('post.connect')),
+            'way' => trim(I('post.ucv')),
+            'introduce' => trim(I('post.introduce')),
         );
         if($data['contact'] == 'QQ') {
             if(!is_numeric($data['way']) || strlen($data['way']) > 11)
@@ -138,6 +138,9 @@ class IndexController extends Controller {
                 $this->error('电话号码填写错误');
         }
         if($data['contact'] == '邮箱') {
+            if(strlen($data['way']) == 0) {
+
+            }
             $pattern = '/^(.*)@(.*)\.(.*)/';
             if(preg_match($pattern, $data['way']))
                 $this->error('邮箱填写错误');

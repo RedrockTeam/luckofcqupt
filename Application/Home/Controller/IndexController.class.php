@@ -121,12 +121,14 @@ class IndexController extends Controller {
             'introduce' => I('post.introduce'),
         );
         if ($info) {
-            $data['photo'] = '../../Public/photos/'.$imgName.'.'.$info['photo']['ext'];
-            $data['has_img'] = 1;
-            $where = array(
-                'openid' => session("info")['openid']
-            );
-             M('message')->where($where)->save($data);
+            foreach($info as $file) {
+                $data['photo'] = '../../Public/photos/'. $file['savepath'] . $file['savename'];
+                $data['has_img'] = 1;
+                $where = array(
+                    'openid' => session("info")['openid']
+                );
+                M('message')->where($where)->save($data);
+            }
         }
         if ($exixtUser){
             M('message')->where(array(

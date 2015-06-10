@@ -10,32 +10,90 @@ class IndexController extends Controller {
 
     //查看来访者是否绑定学号,未绑定则跳转到绑定学号页面,绑定了的话将用户openid存储起来
     public function _before_index(){
-        $info = $this->bindVerify(I('get.openid'));
-        session('info',array(
-            "openid" => I('get.openid'),
-            "stuid" => $info->stuId,
-        ));
+        $openid = I('get.openid');
+        $info = $this->bindVerify($openid);
         if ($info->status != 200) {
             redirect("http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Bind/Bind/bind/openid/".session('openid')."/token/gh_68f0a1ffc303.html", 3, "请先绑定学号！3秒钟后跳转到绑定学号页面...");
         }
+        else{
+            session('info',array(
+                "openid" => $openid,
+                "stuid" => $info->stuId,
+            ));
+            //by Lich, 如果不存在这条记录就把openid和学号存入数据库
+            $message = M('message');
+            $map = array(
+                'openid' => $openid
+            );
+            $count = $message->where($map)->count();
+            if($count == 0) {
+                $photo = $this->getHeadImgUrl($openid);
+                $data = array(
+                    'openid' => $openid,
+                    'stuid' => $info->stuId,
+                    'photo' => $photo
+                );
+                $message->add($data);
+            }
+        }
     }
 
-    //查看校友
+    /**
+     * 查看校友 逻辑: 先输出周围所有的校友
+     * @param array $pos_tar 获取用户的地理位置
+     * @param array $pos_fri 获取校友的的地理位置
+     *
+     */
     public function findSchoolfellow(){
+        $type = json_decode(strip_tags(file_get_contents("php://input")));;
         $info = M('message')->where(array(
             "openid"=>session("info")['openid'],
         ))->find();
+        foreach($type->type as $value){
+            switch($value) {
+                case 1:
+                        $map['openid'] = array('like', '%');
+                        break;
+                case 2:
+                        $map['hometown'] = $info['hometown'];
+                        break;
+                case 3:
+                        $map['sex'] = '男';
+
+                        break;
+                case 4:
+                        $map['sex'] = '女';
+
+                        break;
+                default:
+                        $map['openid'] = array('like', '%');
+                        break;
+            }
+        }
+
         $pos_tar = $this->getLocation(session('info')['openid']);
-        $sf = M('message')->where(array(
-            "hometown"=>$info['hometown'],
-        ))->order("photo,desc")->select();
-        for ($i=0; $i<count($sf); $i++){
+        $sf = M('message')
+            ->where($map) //todo 筛选!
+            ->order("has_img desc")
+            ->select();
+        $count = count($sf);
+        for ($i=0; $i<$count; $i++){
             $pos_fri = $this->getLocation($sf[$i]['openid']);
-            if ($this->computeDis($pos_tar['lan'], $pos_fri['lan'], $pos_tar['long'], $pos_fri['long'])>1000){
+            if ($this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long'])>1000){//lan->lat by Lich
                 unset($sf[$i]);
             }
         }
-        $this->assign("friend",$sf);
+        foreach($sf as $v){
+            $v['stuid'] = substr($v['stuid'], 0, 4).'级';
+            $data[] = $v;
+        }
+        if(IS_POST) {
+            if($data == null)
+                $data = [];
+            $ajax['data'] = $data;
+            $this->ajaxReturn($ajax);
+        }
+        $this->assign('friend', $data);
         $this->display();
     }
     //完善信息表单提交处理
@@ -67,7 +125,7 @@ class IndexController extends Controller {
             'introduce' => I('post.introduce'),
         );
         if ($info) {
-            $data['photo'] = $imgName.$info['photo']['ext'];
+            $data['photo'] = '../../Public/photos/'.$imgName.'.'.$info['photo']['ext'];
             $data['has_img'] = 1;
             if ($img['photo']){
                 unlink('Public/'.$img['photo']);
@@ -82,11 +140,7 @@ class IndexController extends Controller {
                 "openid"=>session('info')['openid']
             ))->data($data)->add();
         }
-        if(!$info) {// 上传错误提示错误信息
-            $this->error("图片上传失败！");
-        }else{// 成功
-            $this->success('完善信息成功！');
-        }
+            $this->success('完善信息成功');
     }
     public function _after_perfectInfo(){
         $rel = M('message')->where(array(
@@ -228,7 +282,7 @@ class IndexController extends Controller {
      * 返回url字符串
      *
      * */
-    public function getHeadImgUrl(){
+    public function getHeadImgUrl($openid){
         $url = "http://Hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/userInfo";
         $timestamp = time();
         $string = "";
@@ -242,7 +296,7 @@ class IndexController extends Controller {
             "timestamp" => $timestamp,
             "string" => $string,
             "secret" => $secret,
-            "openid" => "ouRCyjo24q67OUj5uH-e-ra_Jcp8",
+            "openid" => $openid,
             "token" => "gh_68f0a1ffc303",
         );
         $ch = curl_init();

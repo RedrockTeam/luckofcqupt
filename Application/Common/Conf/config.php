@@ -11,8 +11,6 @@ return array(
     "DB_NAME" => "cyKnot",
     "DB_PORT" => 3306,
     "DB_USER" => "root",
-    "DB_PWD" => "null",
+    "DB_PWD" => "",
     "DB_CHARSET" => "utf8",
-    "TMPL_L_DELIM" => "<{",
-    "TMPL_R_DELIM" => "}>",
 );

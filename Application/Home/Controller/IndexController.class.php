@@ -111,7 +111,6 @@ class IndexController extends Controller {
     }
     //完善信息表单提交处理
     public function perfectInfo(){
-        $imgName = session('info')['stuid'].time();
         $exixtUser = M('message')->where(array(
             "openid" => session('info')['openid']
         ))->select();
@@ -200,10 +199,10 @@ class IndexController extends Controller {
 
     //完善信息页面
     public function information(){
-        if(session('issetopenid') != 1) {
+        if(session('issetopenid') != 2) {
             $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
         }
-        if(session('issetopenid') != 2) {
+        if(session('issetopenid') != 1) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(
@@ -214,10 +213,10 @@ class IndexController extends Controller {
 
     //显示详细信息页面
     public function showDetail(){
-        if(session('issetopenid') != 1) {
+        if(session('issetopenid') != 2) {
             $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
         }
-        if(session('issetopenid') != 2) {
+        if(session('issetopenid') != 1) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(

@@ -20,23 +20,23 @@
     <div class="t-i">
         <div class="row">
             <div class="col">姓名</div>
-            <div class="col">{$info.name}</div>
+            <div class="col">{$info['name'] == null ? '他还没填名字' : $info['name']}</div>
         </div>
         <div class="row">
             <div class="col">性别</div>
-            <div class="col">{$info.sex}</div>
+            <div class="col">{$info['sex'] == null ? '他还没填性别' : $info['sex']}</div>
         </div>
         <div class="row">
             <div class="col">家乡</div>
-            <div class="col">{$info.hometown}</div>
+            <div class="col">{$info['hometown'] == null ? '他还没填家乡' : $info['hometown']}{$info.hometown}</div>
         </div>
         <div class="row">
             <div class="col">联系方式</div>
-            <div class="col">{$info.contact} {$info.way}</div>
+            <div class="col">{$info['contact'] == null ? '他还没填联系方式' : $info['contact']} {$info['contact'] == null ? '' : $info['way']} </div>
         </div>
         <div class="row">
             <div class="col">简介</div>
-            <div class="col">{$info.introduce}</div>
+            <div class="col">{$info['introduce'] == null ? '他还没填简介' : $info['introduce']}</div>
         </div>
     </div>
 </div>

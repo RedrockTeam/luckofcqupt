@@ -13,4 +13,5 @@ return array(
     "DB_USER" => "root",
     "DB_PWD" => "",
     "DB_CHARSET" => "utf8",
+    'SESSION_AUTO_START'    =>  true,
 );

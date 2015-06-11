@@ -171,7 +171,8 @@ class IndexController extends Controller {
                 "openid"=>session('info')['openid']
             ))->data($data)->add();
         }
-            $this->success('完善信息成功');
+        $id = M('message')->where(array("openid"=>session('info')['openid']))->find();
+            $this->success('完善信息成功', U('Index/showDetail').'?id='.$id['id']);
     }
     public function _after_perfectInfo(){
         $rel = M('message')->where(array(

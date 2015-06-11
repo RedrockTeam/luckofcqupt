@@ -23,7 +23,7 @@
                 <a href="{:U('Index/showDetail')}?id={$vo.id}">
                     <i class="s-icon" style="background-image: url(' {$vo.photo} ')"></i>
                     <aside>
-                        <h2 class="name"><span>{$vo['name']!=null?$vo['name']:'他还没填名字'}</span> <i class="i_w"></i></h2>
+                        <h2 class="name"><span>{$vo['name']!=null?$vo['name']:'他还没填名字'}</span> {$vo['sex']!='女'?'<i class="i_w"></i>':'<i class="i_m"></i>'}</h2>
                         <span class="trip s-gap">{$vo.stuid}</span>
                         <span class="trip">{$vo['college']?$vo['college']:'他还没填学院'}</span>
                     </aside>
@@ -52,10 +52,6 @@
 </div>
 </body>
 <script>
-    var flag = {$flag};
-    if(flag == 1) {
-        alert('你还没有完善个人信息, 完善信息能更容易匹配周围的人哦~');
-    }
     var type_path = '{:U('Index/findSchoolfellow')}';
     var people = '{:U('Index/showDetail')}';
 </script>

@@ -10,11 +10,11 @@ class IndexController extends Controller {
         $openid = I('get.openid');
         $info = $this->bindVerify($openid);
         $care = $this->getHeadImgUrl($openid);
-        if ($info->status != 200) {//绑定学号没, 这两顺序没反
-            session('issetopenid', 2);
+        if ($info->status != 200) {//绑定学号没
+            session('issetopenid2', 0);
         }
         if ($care->status != 200) {//关注小帮手没
-            session('issetopenid', 1);
+            session('issetopenid1', 0);
         }
         else{
             session('issetopenid', true);
@@ -53,7 +53,7 @@ class IndexController extends Controller {
      *
      */
     public function findSchoolfellow() {
-        $type = json_decode(strip_tags(file_get_contents("php://input")));;
+        $type = json_decode(strip_tags(file_get_contents("php://input")));
         $info = M('message')->where(array(
             "openid"=>session("info")['openid'],
         ))->find();
@@ -80,7 +80,8 @@ class IndexController extends Controller {
         }
 
         $pos_tar = $this->getLocation(session('info')['openid']);
-        $page = I('get.page')? I('get.page'):1;
+        $post = json_decode(strip_tags(file_get_contents("php://input")));
+        $page = $post->page? $post->page:1;
         $offset = ($page - 1) * 10;
         $sf = M('message')
             ->where($map) //todo 筛选!
@@ -203,10 +204,10 @@ class IndexController extends Controller {
 
     //完善信息页面
     public function information(){
-        if(session('issetopenid') != 2) {
+        if(session('issetopenid1') == 0) {
             $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
         }
-        if(session('issetopenid') != 1) {
+        if(session('issetopenid2') == 0) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(
@@ -217,10 +218,10 @@ class IndexController extends Controller {
 
     //显示详细信息页面
     public function showDetail(){
-        if(session('issetopenid') != 2) {
+        if(session('issetopenid1') == 0) {
             $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
         }
-        if(session('issetopenid') != 1) {
+        if(session('issetopenid2') == 0) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(

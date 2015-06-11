@@ -11,10 +11,10 @@ class IndexController extends Controller {
         $info = $this->bindVerify($openid);
         $care = $this->getHeadImgUrl($openid);
         if ($info->status != 200) {//绑定学号没
-            session('issetopenid2', 2);
+            session('issetopenid2', false);
         }
         if ($care->status != 200) {//关注小帮手没
-            session('issetopenid1', 1);
+            session('issetopenid1', false);
         }
         else{
             session('issetopenid', true);
@@ -204,10 +204,10 @@ class IndexController extends Controller {
 
     //完善信息页面
     public function information(){
-        if(session('issetopenid1') != 2) {
+        if(!session('issetopenid1')) {
             $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
         }
-        if(session('issetopenid2') != 1) {
+        if(!session('issetopenid2')) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(
@@ -218,10 +218,10 @@ class IndexController extends Controller {
 
     //显示详细信息页面
     public function showDetail(){
-        if(session('issetopenid1') != 2) {
+        if(!session('issetopenid1')) {
             $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
         }
-        if(session('issetopenid2') != 1) {
+        if(!session('issetopenid2')) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(

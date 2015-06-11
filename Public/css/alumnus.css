@@ -66,7 +66,6 @@
 }
 .t-i .col:nth-child(2n) {
   width: 9.95rem;
-  padding-left: 0.875rem;
   color: #111111;
   vertical-align: top;
   font-size: 0.8rem;

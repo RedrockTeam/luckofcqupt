@@ -13,10 +13,14 @@ class IndexController extends Controller {
         if ($info->status != '200') {//绑定学号没
             session('stu', false);
         }
-        if ($care->status != '200') {//关注小帮手没
+        else{
+            session('stu', true);
+        }
+        if ($care->data->errcode == '40003') {//关注小帮手没
             session('carexbs', false);
         }
         else{
+            session('carexbs', true);
             session('info',array(
                 "openid" => $openid,
                 "stuid" => $info->stuId,

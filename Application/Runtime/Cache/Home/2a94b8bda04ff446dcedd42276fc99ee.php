@@ -15,6 +15,11 @@
         <a href="/cyKnot/Home/Index/findSchoolfellow">寻找身边重邮人</a>
         <a href="/cyKnot/Home/Index/information">完善或修改信息</a>
     </menu>
+    <dl class="s-tips">
+        <dt class="u-sth">使用说明</dt>
+        <dd>1.关注重邮小帮手(cyxbswx),绑定学号打开提供"位置信息"</dd>
+        <dd>2.打开手机GPS功能</dd>
+    </dl>
 </div>
 </body>
 <script src="/cyKnot/Public/js/index.js"></script>

@@ -1,0 +1,1002 @@
+[ 2015-06-11T21:44:57+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+
+[ 2015-06-11T21:45:07+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2015-06-11T21:50:53+08:00 ] ::1 /cyKnot/index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2015-06-11T21:51:00+08:00 ] ::1 /cyKnot/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001389s ]
+
+[ 2015-06-11T21:53:54+08:00 ] ::1 /cyKnot/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-06-11T21:53:56+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-06-11T21:53:58+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjrqMKVYYDSuxkOY0Adp9NsI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2015-06-11T21:53:59+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2015-06-11T21:54:04+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `knot_message` WHERE `hometown` = null ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0542s ]
+NOTIC: [8] Undefined variable: data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 102 行.
+
+[ 2015-06-11T21:54:08+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` LIKE '%' ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0381s ]
+
+[ 2015-06-11T21:55:30+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000407s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2015-06-11T21:55:32+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjrqMKVYYDSuxkOY0Adp9NsI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002116s ]
+
+[ 2015-06-11T21:55:45+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0023s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2015-06-11T21:55:46+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000305s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2015-06-11T21:55:48+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjrqMKVYYDSuxkOY0Adp9NsI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2015-06-11T21:55:50+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjv_2fAwzpcWtS20bJXHybHE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjv_2fAwzpcWtS20bJXHybHE' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000576s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2015-06-11T21:55:53+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjv_2fAwzpcWtS20bJXHybHE' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2015-06-11T21:56:03+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjv_2fAwzpcWtS20bJXHybHE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjv_2fAwzpcWtS20bJXHybHE' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2015-06-11T21:56:07+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjv_2fAwzpcWtS20bJXHybHE' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2015-06-11T21:56:52+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjv_2fAwzpcWtS20bJXHybHE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjv_2fAwzpcWtS20bJXHybHE' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2015-06-11T21:56:55+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjjgbclacVA5Ao74dA_KMc0Q
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001565s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjjgbclacVA5Ao74dA_KMc0Q' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2015-06-11T21:56:57+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjjgbclacVA5Ao74dA_KMc0Q' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2015-06-11T21:57:19+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjjgbclacVA5Ao74dA_KMc0Q
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjjgbclacVA5Ao74dA_KMc0Q' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2015-06-11T21:57:22+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjuUQDgJtgrXGwG50jpdmoFM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjuUQDgJtgrXGwG50jpdmoFM' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2015-06-11T21:57:45+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjuUQDgJtgrXGwG50jpdmoFM' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2015-06-11T21:58:04+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjuUQDgJtgrXGwG50jpdmoFM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjuUQDgJtgrXGwG50jpdmoFM' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002393s ]
+
+[ 2015-06-11T21:58:07+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjnUAw4EtT8o7ikKWFxSg3Rc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjnUAw4EtT8o7ikKWFxSg3Rc' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2015-06-11T21:58:14+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjoIcIwzBTtK5XKtTaxkFEaA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjoIcIwzBTtK5XKtTaxkFEaA' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2015-06-11T21:58:16+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjoIcIwzBTtK5XKtTaxkFEaA' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000629s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2015-06-11T21:58:32+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjoIcIwzBTtK5XKtTaxkFEaA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjoIcIwzBTtK5XKtTaxkFEaA' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000815s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001918s ]
+
+[ 2015-06-11T21:58:34+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjoDw09H1eS-zZgNU4ABW8ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001756s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjoDw09H1eS-zZgNU4ABW8ws' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2015-06-11T21:58:36+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjoDw09H1eS-zZgNU4ABW8ws' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 113 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2015-06-11T21:58:41+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjoDw09H1eS-zZgNU4ABW8ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjoDw09H1eS-zZgNU4ABW8ws' LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2015-06-11T21:58:50+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjoDw09H1eS-zZgNU4ABW8ws' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 113 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2015-06-11T21:58:51+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjoDw09H1eS-zZgNU4ABW8ws' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 113 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000506s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2015-06-11T21:58:51+08:00 ] ::1 /cyKnot/Home/Index/index.html?openid=ouRCyjsiCTFLlw7baFqk2bMRlmiQ
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjsiCTFLlw7baFqk2bMRlmiQ' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2015-06-11T21:58:54+08:00 ] ::1 /cyKnot/Home/Index/findSchoolfellow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjsiCTFLlw7baFqk2bMRlmiQ' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 60 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 86 行.
+SQL: SELECT * FROM `knot_message` ORDER BY contact desc LIMIT 0,10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 326 行.
+NOTIC: [8] Undefined property: stdClass::$data D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\cyKnot\Application\Home\Controller\IndexController.class.php 第 327 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2015-06-11T22:21:22+08:00 ] ::1 /cyKnot/index.php?openid=ouRCyjrqMKVYYDSuxkOY0Adp9NsI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005325s ]
+
+[ 2015-06-11T22:21:25+08:00 ] ::1 /cyKnot/index.php?openid=ouRCyjrqMKVYYDSuxkOY0Adp9NsI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `knot_message` WHERE `openid` = 'ouRCyjrqMKVYYDSuxkOY0Adp9NsI' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001562s ]
+

@@ -2,13 +2,19 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-
+    /**
+     * 这代码太渣了, 这是擦屁股, 反正老子也不打算改了, 怎么快怎么来
+     */
     //显示主页
     public function index(){
         $openid = I('get.openid');
         $info = $this->bindVerify($openid);
-        if ($info->status != 200) {
-            session('issetopenid', false);
+        $care = $this->getHeadImgUrl($openid);
+        if ($info->status != 200) {//绑定学号没, 这两顺序没反
+            session('issetopenid', 2);
+        }
+        if ($care->status != 200) {//关注小帮手没
+            session('issetopenid', 1);
         }
         else{
             session('issetopenid', true);
@@ -27,7 +33,7 @@ class IndexController extends Controller {
                 $data = array(
                     'openid' => $openid,
                     'stuid' => $info->stuId,
-                    'photo' => $photo
+                    'photo' => $photo->data->headimgurl
                 );
                 $message->add($data);
             }
@@ -185,7 +191,8 @@ class IndexController extends Controller {
         if ($bool) {
             $data['perfect'] = 1;
         }
-        $data['headimgurl'] = $this->getHeadImgUrl(session('info')['openid']);
+        $result = $this->getHeadImgUrl(session('info')['openid']);
+        $data['headimgurl'] = $result->data->headimgurl;
         M('message')->where(array(
             'openid' => session('info')['openid'],
         ))->data($data)->save();
@@ -193,7 +200,10 @@ class IndexController extends Controller {
 
     //完善信息页面
     public function information(){
-        if(!session('issetopenid')) {
+        if(session('issetopenid') != 1) {
+            $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
+        }
+        if(session('issetopenid') != 2) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(
@@ -204,7 +214,10 @@ class IndexController extends Controller {
 
     //显示详细信息页面
     public function showDetail(){
-        if(!session('issetopenid')) {
+        if(session('issetopenid') != 1) {
+            $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
+        }
+        if(session('issetopenid') != 2) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(
@@ -345,6 +358,7 @@ class IndexController extends Controller {
         curl_close($ch);
         //打印获得的数据
         $rel = json_decode($output);
-        return $rel->data->headimgurl;
+        return $rel;
     }
+
 }

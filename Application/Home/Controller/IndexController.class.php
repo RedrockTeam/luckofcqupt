@@ -107,6 +107,9 @@ class IndexController extends Controller {
     }
     //完善信息表单提交处理
     public function perfectInfo(){
+        if(!session('issetopenid')) {
+            $this->error('请先绑定学号~');
+        }
         $imgName = session('info')['stuid'].time();
         $exixtUser = M('message')->where(array(
             "openid" => session('info')['openid']

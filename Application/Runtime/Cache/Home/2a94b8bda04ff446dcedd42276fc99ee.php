@@ -20,6 +20,8 @@
         <dd>1.关注重邮小帮手(cyxbswx),绑定学号打开提供"位置信息"</dd>
         <dd>2.打开手机GPS功能</dd>
     </dl>
+
+    <span class="s-comp">©红岩网校出品</span>
 </div>
 </body>
 <script src="/luckofcqupt/Public/js/index.js"></script>

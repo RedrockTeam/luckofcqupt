@@ -82,7 +82,7 @@ class IndexController extends Controller {
         $pos_tar = $this->getLocation(session('info')['openid']);
         $sf = M('message')
             ->where($map) //todo 筛选!
-            ->order("has_img desc")
+            ->order("contact desc")
             ->select();
         $count = count($sf);
         for ($i=0; $i<$count; $i++){

@@ -8,7 +8,7 @@ class IndexController extends Controller {
         $openid = I('get.openid');
         $info = $this->bindVerify($openid);
         if ($info->status != 200) {
-            $this->error("请先绑定学号！3秒钟后跳转到绑定学号页面...", "http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Bind/Bind/bind/openid/".session('openid')."/token/gh_68f0a1ffc303.html");
+            session('issetopenid', false);
         }
         else{
             session('info',array(
@@ -46,6 +46,9 @@ class IndexController extends Controller {
      *
      */
     public function findSchoolfellow(){
+        if(!session('issetopenid')) {
+            $this->error('请先绑定学号~');
+        }
         $type = json_decode(strip_tags(file_get_contents("php://input")));;
         $info = M('message')->where(array(
             "openid"=>session("info")['openid'],

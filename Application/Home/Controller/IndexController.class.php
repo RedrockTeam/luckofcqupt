@@ -80,9 +80,12 @@ class IndexController extends Controller {
         }
 
         $pos_tar = $this->getLocation(session('info')['openid']);
+        $page = I('get.page')? I('get.page'):1;
+        $offset = ($page - 1) * 10;
         $sf = M('message')
             ->where($map) //todo 筛选!
             ->order("contact desc")
+            ->limit($offset, 10)
             ->select();
         $count = count($sf);
         for ($i=0; $i<$count; $i++){
@@ -99,6 +102,7 @@ class IndexController extends Controller {
             if($data == null)
                 $data = [];
             $ajax['data'] = $data;
+            $ajax['page'] = $page;
             $this->ajaxReturn($ajax);
         }
         $flag = 0;

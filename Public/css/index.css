@@ -52,3 +52,18 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #ff7c4e', endColorstr=' #ff643f', GradientType='0');
   /* IE*/
 }
+.s-tips {
+  width: 10.275rem;
+  margin: 1.2rem auto 0;
+  color: #ffffff;
+  font-family: "hiraginosansgb w3", "microsoft yahei";
+}
+.s-tips dt {
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.s-tips dd {
+  line-height: 1rem;
+  font-size: 0.65rem;
+}

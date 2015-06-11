@@ -11,6 +11,7 @@ class IndexController extends Controller {
             session('issetopenid', false);
         }
         else{
+            session('issetopenid', true);
             session('info',array(
                 "openid" => $openid,
                 "stuid" => $info->stuId,

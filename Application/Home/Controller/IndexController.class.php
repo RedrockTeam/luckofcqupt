@@ -46,10 +46,7 @@ class IndexController extends Controller {
      * @param array $pos_fri 获取校友的的地理位置
      *
      */
-    public function findSchoolfellow(){
-        if(!session('issetopenid')) {
-            $this->error('请先绑定学号~');
-        }
+    public function findSchoolfellow() {
         $type = json_decode(strip_tags(file_get_contents("php://input")));;
         $info = M('message')->where(array(
             "openid"=>session("info")['openid'],
@@ -197,7 +194,7 @@ class IndexController extends Controller {
     //完善信息页面
     public function information(){
         if(!session('issetopenid')) {
-            $this->error('请先绑定学号~');
+            $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(
             "openid" => session('info')['openid'],
@@ -207,6 +204,9 @@ class IndexController extends Controller {
 
     //显示详细信息页面
     public function showDetail(){
+        if(!session('issetopenid')) {
+            $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
+        }
         $this->assign("info",M('message')->where(array(
             "id" => I('get.id'),
         ))->find());

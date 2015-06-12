@@ -94,7 +94,7 @@ class IndexController extends Controller {
         $count = count($sf);
         for ($i=0; $i<$count; $i++){
             $pos_fri = $this->getLocation($sf[$i]['openid']);
-            if ($this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long'])>1000){//lan->lat by Lich
+            if ($this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long'])>5000){//lan->lat by Lich
                 unset($sf[$i]);
             }
         }

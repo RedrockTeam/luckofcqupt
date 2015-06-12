@@ -88,7 +88,7 @@ class IndexController extends Controller {
         $offset = ($page - 1) * 100;
         $sf = M('message')
             ->where($map) //todo 筛选!
-            ->order("perfect desc")
+//            ->order("perfect desc")
             ->limit($offset, 100)
             ->select();
         $count = count($sf);

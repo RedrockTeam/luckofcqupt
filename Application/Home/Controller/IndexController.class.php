@@ -9,19 +9,19 @@ class IndexController extends Controller {
     public function index(){
         $openid = I('get.openid');
         $info = $this->bindVerify($openid);
-        $care = $this->getHeadImgUrl($openid);
+        $care = $this->getOpenidVerify($openid);
         if ($info->status != '200') {//绑定学号没
             session('stu', false);
         }
         else{
             session('stu', true);
         }
-        if ($care->data->errcode == '40003') {//关注小帮手没
+        if ($care->status != '200') {//关注小帮手没
             session('carexbs', false);
         }
         else{
+            session('carexbs', true);
             if(session('stu')) {
-                session('carexbs', true);
                 session('info',array(
                     "openid" => $openid,
                     "stuid" => $info->stuId,
@@ -62,6 +62,9 @@ class IndexController extends Controller {
         $info = M('message')->where(array(
             "openid"=>session("info")['openid'],
         ))->find();
+        if($type->type != null)
+            session('type', $type->type);
+        $type->type = session('type');
         foreach($type->type as $value){
             switch($value) {
                 case 1:
@@ -350,6 +353,7 @@ class IndexController extends Controller {
      *
      * */
     public function getHeadImgUrl($openid){
+//        $openid = 'ouRCyjpvLulo8TzHsMmGY2bTP13c';
         $url = "http://Hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/userInfo";
         $timestamp = time();
         $string = "";
@@ -377,6 +381,40 @@ class IndexController extends Controller {
         curl_close($ch);
         //打印获得的数据
         $rel = json_decode($output);
+//        print_r($rel);
+        return $rel;
+    }
+    //关注认证
+    public function getOpenidVerify($openid){
+//        $openid = 'ouRCyjpvLulo8TzHsMmGY2bTP13c';
+        $url = "http://Hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/openidVerify";
+        $timestamp = time();
+        $string = "";
+        $arr = "abcdefghijklmnopqistuvwxyz0123456789ABCDEFGHIGKLMNOPQISTUVWXYZ";
+        for ($i=0; $i<16; $i++) {
+            $y = rand(0,41);
+            $string .= $arr[$y];
+        }
+        $secret = sha1(sha1($timestamp).md5($string).'redrock');
+        $post_data = array (
+            "timestamp" => $timestamp,
+            "string" => $string,
+            "secret" => $secret,
+            "openid" => $openid,
+            "token" => "gh_68f0a1ffc303",
+        );
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        // post数据
+        curl_setopt($ch, CURLOPT_POST, 1);
+        // post的变量
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+        $output = curl_exec($ch);
+        curl_close($ch);
+        //打印获得的数据
+        $rel = json_decode($output);
+//        print_r($rel);
         return $rel;
     }
 

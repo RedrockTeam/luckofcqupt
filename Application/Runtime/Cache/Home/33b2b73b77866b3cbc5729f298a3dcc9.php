@@ -28,7 +28,7 @@
         </div>
         <div class="row">
             <div class="col">家乡</div>
-            <div class="col"><?php echo ($info['hometown'] == null ? '他还没填家乡' : $info['hometown']); echo ($info["hometown"]); ?></div>
+            <div class="col"><?php echo ($info['hometown'] == null ? '他还没填家乡' : $info['hometown']); ?></div>
         </div>
         <div class="row">
             <div class="col">联系方式</div>

@@ -89,15 +89,15 @@ class IndexController extends Controller {
         $sf = M('message')
             ->where($map) //todo 筛选!
 //            ->order("perfect desc")
-            ->limit($offset, 10)
+//            ->limit($offset, 10)
             ->select();
-        $count = count($sf);
-        for ($i=0; $i<$count; $i++){
-            $pos_fri = $this->getLocation($sf[$i]['openid']);
-            if ($this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long'])>5000){//lan->lat by Lich
+//        $count = count($sf);
+//        for ($i=0; $i<$count; $i++){
+//            $pos_fri = $this->getLocation($sf[$i]['openid']);
+//            if ($this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long'])>5000){//lan->lat by Lich
 //                unset($sf[$i]);
-            }
-        }
+//            }
+//        }
         foreach($sf as $v){
             $v['stuid'] = substr($v['stuid'], 0, 4).'级';
             $data[] = $v;

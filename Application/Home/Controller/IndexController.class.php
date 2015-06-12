@@ -20,25 +20,27 @@ class IndexController extends Controller {
             session('carexbs', false);
         }
         else{
-            session('carexbs', true);
-            session('info',array(
-                "openid" => $openid,
-                "stuid" => $info->stuId,
-            ));
-            //by Lich, 如果不存在这条记录就把openid和学号存入数据库
-            $message = M('message');
-            $map = array(
-                'openid' => $openid
-            );
-            $count = $message->where($map)->count();
-            if($count == 0) {
-                $photo = $this->getHeadImgUrl($openid);
-                $data = array(
-                    'openid' => $openid,
-                    'stuid' => $info->stuId,
-                    'photo' => $photo->data->headimgurl
+            if(session('stu')) {
+                session('carexbs', true);
+                session('info',array(
+                    "openid" => $openid,
+                    "stuid" => $info->stuId,
+                ));
+                //by Lich, 如果不存在这条记录就把openid和学号存入数据库
+                $message = M('message');
+                $map = array(
+                    'openid' => $openid
                 );
-                $message->add($data);
+                $count = $message->where($map)->count();
+                if($count == 0) {
+                    $photo = $this->getHeadImgUrl($openid);
+                    $data = array(
+                        'openid' => $openid,
+                        'stuid' => $info->stuId,
+                        'photo' => $photo->data->headimgurl
+                    );
+                    $message->add($data);
+                }
             }
         }
         $this->display("index");

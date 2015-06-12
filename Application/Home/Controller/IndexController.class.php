@@ -243,10 +243,18 @@ class IndexController extends Controller {
 
     //通过经纬度计算两点的距离，返回单位米
     public function computeDis($lat1, $lat2, $lung1, $lung2){
-        $a = $lat1 - $lat2;
-        $b = $lung1 - $lung2;
-        $dis = 2*asin(sqrt(sin($a/2)*sin($a/2)+cos($lat1)*cos($lat2)*sin($b/2)*sin($b/2)))*6378137;
-        return $dis;
+//        $a = $lat1 - $lat2;
+//        $b = $lung1 - $lung2;
+//        $dis = 2*asin(sqrt(sin($a/2)*sin($a/2)+cos($lat1)*cos($lat2)*sin($b/2)*sin($b/2)))*6378137;
+//        return $dis;
+        $radLat1=deg2rad($lat1);//deg2rad()函数将角度转换为弧度
+        $radLat2=deg2rad($lat2);
+        $radLng1=deg2rad($lung1);
+        $radLng2=deg2rad($lung2);
+        $a=$radLat1-$radLat2;
+        $b=$radLng1-$radLng2;
+        $s=2*asin(sqrt(pow(sin($a/2),2)+cos($radLat1)*cos($radLat2)*pow(sin($b/2),2)))*6378.137*1000;
+        return $s;
     }
     /*
      *

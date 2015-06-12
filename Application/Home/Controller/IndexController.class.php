@@ -85,19 +85,19 @@ class IndexController extends Controller {
         $pos_tar = $this->getLocation(session('info')['openid']);
         $post = json_decode(strip_tags(file_get_contents("php://input")));
         $page = $post->page? $post->page:1;
-        $offset = ($page - 1) * 10;
+//        $offset = ($page - 1) * 10;
         $sf = M('message')
             ->where($map) //todo 筛选!
-//            ->order("perfect desc")
-//            ->limit($offset, 10)
+            ->order("perfect desc")
+            ->limit($offset, 10)
             ->select();
-//        $count = count($sf);
-//        for ($i=0; $i<$count; $i++){
-//            $pos_fri = $this->getLocation($sf[$i]['openid']);
-//            if ($this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long'])>5000){//lan->lat by Lich
-//                unset($sf[$i]);
-//            }
-//        }
+        $count = count($sf);
+        for ($i=0; $i<$count; $i++){
+            $pos_fri = $this->getLocation($sf[$i]['openid']);
+            if ($this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long'])>5000){//lan->lat by Lich
+                unset($sf[$i]);
+            }
+        }
         foreach($sf as $v){
             $v['stuid'] = substr($v['stuid'], 0, 4).'级';
             $data[] = $v;

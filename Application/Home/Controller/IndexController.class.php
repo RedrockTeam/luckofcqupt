@@ -88,7 +88,7 @@ class IndexController extends Controller {
         $offset = ($page - 1) * 10;
         $sf = M('message')
             ->where($map) //todo 筛选!
-            ->order("contact desc")
+            ->order("perfect desc")
             ->limit($offset, 10)
             ->select();
         $count = count($sf);
@@ -139,6 +139,8 @@ class IndexController extends Controller {
             'way' => trim(I('post.ucv')),
             'introduce' => trim(I('post.introduce')),
         );
+        if($data['hometown'] != null)
+            $data['perfect'] = 1;
         if(strlen($data['name']) == 0) {
             $this->error('姓名不能为空');
         }

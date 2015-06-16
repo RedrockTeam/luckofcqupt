@@ -8,7 +8,7 @@ return array(
     "DB_PREFIX" => "knot_",
     "DB_TYPE" => "mysql",
     "DB_HOST" => "127.0.0.1",
-    "DB_NAME" => "cyKnot",
+    "DB_NAME" => "luckofcqupt",
     "DB_PORT" => 3306,
     "DB_USER" => "root",
     "DB_PWD" => "",

@@ -111,6 +111,9 @@
   padding-left: (60/640)*16rem;
   font-family: "hiraginosansgb w3", "microsoft yahei";
 }
+.u-item .name{
+  position: relative;
+}
 
 .u-item .name span:first-child{
   display: inline-block;
@@ -137,12 +140,16 @@
   background-image:url("../images/p_list/woman.png");
 }
 .u-item .name .s-sl {
-  float: right;
+  //float: right;
+  position: absolute;
+  right: (20/640)*16rem;
+  bottom: 0;
   color: #888888;
   text-overflow: clip;
   font-size: (20/640)*16rem;
-  margin-right: (20/640)*16rem;
-  line-height: 1rem;
+  //margin-right: (20/640)*16rem;
+  //line-height: 1rem;
+  vertical-align: text-bottom;
 }
 .u-item aside .trip {
   display: block;

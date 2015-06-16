@@ -103,6 +103,9 @@
   padding-left: 1.5rem;
   font-family: "hiraginosansgb w3", "microsoft yahei";
 }
+.u-item .name {
+  position: relative;
+}
 .u-item .name span:first-child {
   display: inline-block;
   width: 2.875rem;
@@ -127,12 +130,13 @@
   background-image: url("../images/p_list/woman.png");
 }
 .u-item .name .s-sl {
-  float: right;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0;
   color: #888888;
   text-overflow: clip;
   font-size: 0.5rem;
-  margin-right: 0.5rem;
-  line-height: 1rem;
+  vertical-align: text-bottom;
 }
 .u-item aside .trip {
   display: block;

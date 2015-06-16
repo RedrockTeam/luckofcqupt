@@ -47,6 +47,52 @@
   margin: -1.55rem 0 0 -1.55rem;
   background-size: cover;
   background-position: center center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  animation: anshw 2s ease-in-out infinite;
+  -webkit-animation: anshw 2s ease-in-out infinite;
+  -moz-animation: anshw 2s ease-in-out infinite;
+  -ms-animation: anshw 2s ease-in-out infinite;
+}
+/*�ڲ���Ӱ����*/
+@keyframes anshw {
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+}
+@-webkit-keyframes anshw {
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+}
+@-ms-keyframes anshw {
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+}
+@-moz-keyframes anshw {
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+}
+@-o-keyframes anshw {
+  50% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
 }
 .t-i .col {
   display: inline-block;

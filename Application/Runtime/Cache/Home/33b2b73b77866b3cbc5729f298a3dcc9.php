@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>校友</title>
-    <script src="/cyKnot/Public/js/lib/init.js"></script>
-    <link rel="stylesheet" type="text/css" href="/cyKnot/Public/css/lib/base.css">
-    <link rel="stylesheet" type="text/css" href="/cyKnot/Public/css/alumnus.css">
+    <script src="/luckofcqupt/Public/js/lib/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="/luckofcqupt/Public/css/lib/base.css">
+    <link rel="stylesheet" type="text/css" href="/luckofcqupt/Public/css/alumnus.css">
 </head>
 <body>
 <div class="s-wrap">

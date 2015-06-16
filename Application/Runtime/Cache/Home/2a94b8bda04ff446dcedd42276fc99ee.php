@@ -13,6 +13,7 @@
     <i class="s-logo"></i>
     <menu class="u-links">
         <a href="/luckofcqupt/Home/Index/findSchoolfellow">寻找身边重邮人</a>
+        <a href="/luckofcqupt/Home/Index/information">查找重邮人</a>
         <a href="/luckofcqupt/Home/Index/information">完善或修改信息</a>
     </menu>
     <dl class="s-tips">

@@ -112,7 +112,7 @@
   font-family: "hiraginosansgb w3", "microsoft yahei";
 }
 
-.u-item .name span {
+.u-item .name span:first-child{
   display: inline-block;
   width: (115/640)*16rem;
   overflow: hidden;
@@ -122,7 +122,7 @@
   color: #111111;
 }
 
-.u-item .name i {
+.u-item .name i{
   display: inline-block;
   width: (35/640)*16rem;
   height: (22/640)*16rem;
@@ -136,7 +136,14 @@
 .u-item .name .i_w{
   background-image:url("../images/p_list/woman.png");
 }
-
+.u-item .name .s-sl {
+  float: right;
+  color: #888888;
+  text-overflow: clip;
+  font-size: (20/640)*16rem;
+  margin-right: (20/640)*16rem;
+  line-height: 1rem;
+}
 .u-item aside .trip {
   display: block;
   color: #666666;

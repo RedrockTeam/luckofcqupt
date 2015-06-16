@@ -22,7 +22,7 @@
                 <a href="<?php echo U('Index/showDetail');?>?id=<?php echo ($vo["id"]); ?>">
                     <i class="s-icon" style="background-image: url(' <?php echo ($vo["photo"]); ?> ')"></i>
                     <aside>
-                        <h2 class="name"><span><?php echo ($vo['name']!=null?$vo['name']:'他还没填名字'); ?></span> <?php echo ($vo['sex']!='女'?'<i class="i_m"></i>':'<i class="i_w"></i>'); ?></h2>
+                        <h2 class="name"><span><?php echo ($vo['name']!=null?$vo['name']:'他还没填名字'); ?></span> <?php echo ($vo['sex']!='女'?'<i class="i_m"></i>':'<i class="i_w"></i>'); ?> <span class="s-sl">距离   100米<!--空格不要省略--></span></h2>
                         <span class="trip s-gap"><?php echo ($vo["stuid"]); ?></span>
                         <span class="trip"><?php echo ($vo['college']?$vo['college']:'他还没填学院'); ?></span>
                     </aside>

@@ -43,6 +43,15 @@
   font-family: "hiraginosansgb w3", "microsoft yahei";
   text-decoration: none;
 }
+.u-links a:nth-child(2) {
+  background: #ff9d24;
+  background-image: -moz-linear-gradient(top, #ffa728, #ff9421);
+  /* Firefox */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffa728), color-stop(1, #ff9421));
+  /* Saf4+, Chrome */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' #ffa728', endColorstr=' #ff9421', GradientType='0');
+  /* IE*/
+}
 .u-links a:last-child {
   background: #ff6e45;
   background-image: -moz-linear-gradient(top, #ff7c4e, #ff643f);

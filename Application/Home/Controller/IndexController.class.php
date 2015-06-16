@@ -3,39 +3,45 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     /**
-     * 这代码太渣了, 这是擦屁股, 反正老子也不打算改了, 怎么快怎么来
+     * 这代码太渣了, 没时间重构了, 怎么快怎么来
      */
     //显示主页
     public function index(){
         $openid = I('get.openid');
         $info = $this->bindVerify($openid);
-        $care = $this->getHeadImgUrl($openid);
-        if ($info->status != 200) {//绑定学号没
-            session('issetopenid2', 0);
-        }
-        if ($care->status != 200) {//关注小帮手没
-            session('issetopenid1', 0);
+        $care = $this->getOpenidVerify($openid);
+        if ($info->status != '200') {//绑定学号没
+            session('stu', false);
         }
         else{
-            session('issetopenid', true);
-            session('info',array(
-                "openid" => $openid,
-                "stuid" => $info->stuId,
-            ));
-            //by Lich, 如果不存在这条记录就把openid和学号存入数据库
-            $message = M('message');
-            $map = array(
-                'openid' => $openid
-            );
-            $count = $message->where($map)->count();
-            if($count == 0) {
-                $photo = $this->getHeadImgUrl($openid);
-                $data = array(
-                    'openid' => $openid,
-                    'stuid' => $info->stuId,
-                    'photo' => $photo->data->headimgurl
+            session('stu', true);
+        }
+        if ($care->status != '200') {//关注小帮手没
+            session('carexbs', false);
+        }
+        else{
+            session('carexbs', true);
+            //如果绑定了学号
+            if(session('stu')) {
+                session('info',array(
+                    "openid" => $openid,
+                    "stuid" => $info->stuId,
+                ));
+                //by Lich, 如果不存在这条记录就把openid和学号存入数据库
+                $message = M('message');
+                $map = array(
+                    'openid' => $openid
                 );
-                $message->add($data);
+                $count = $message->where($map)->count();
+                if($count == 0) {
+                    $photo = $this->getHeadImgUrl($openid);
+                    $data = array(
+                        'openid' => $openid,
+                        'stuid' => $info->stuId,
+                        'photo' => $photo->data->headimgurl
+                    );
+                    $message->add($data);
+                }
             }
         }
         $this->display("index");
@@ -53,10 +59,17 @@ class IndexController extends Controller {
      *
      */
     public function findSchoolfellow() {
+        //获取查询条件
         $type = json_decode(strip_tags(file_get_contents("php://input")));
+
         $info = M('message')->where(array(
             "openid"=>session("info")['openid'],
         ))->find();
+        //前端没时间改, 通过session解决选择分类后分页问题
+        if($type->type != null)
+            session('type', $type->type);
+
+        $type->type = session('type');
         foreach($type->type as $value){
             switch($value) {
                 case 1:
@@ -80,36 +93,41 @@ class IndexController extends Controller {
         }
 
         $pos_tar = $this->getLocation(session('info')['openid']);
+
         $post = json_decode(strip_tags(file_get_contents("php://input")));
         $page = $post->page? $post->page:1;
-        $offset = ($page - 1) * 10;
+        $offset = ($page - 1) * 10;//分页
+
         $sf = M('message')
             ->where($map) //todo 筛选!
-            ->order("contact desc")
+            ->order("perfect desc")
             ->limit($offset, 10)
             ->select();
         $count = count($sf);
         for ($i=0; $i<$count; $i++){
             $pos_fri = $this->getLocation($sf[$i]['openid']);
-            if ($this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long'])>1000){//lan->lat by Lich
+            if ($this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long'])>5000){//接口为lat, lan->lat by Lich
                 unset($sf[$i]);
             }
         }
         foreach($sf as $v){
-            $v['stuid'] = substr($v['stuid'], 0, 4).'级';
+            $v['stuid'] = substr($v['stuid'], 0, 4).'级';//直接转换年级 20xx级
             $data[] = $v;
         }
-        if(IS_POST) {
+
+        if(IS_POST) {//瀑布流, ajax请求此方法时
             if($data == null)
                 $data = [];
             $ajax['data'] = $data;
             $ajax['page'] = $page;
             $this->ajaxReturn($ajax);
         }
+
         $flag = 0;
         if(strlen($info['hometown']) == 0) {
             $flag = 1;
         }
+        //flag检测家乡填没
         $this->assign('flag', $flag);
         $this->assign('friend', $data);
         $this->display();
@@ -136,6 +154,8 @@ class IndexController extends Controller {
             'way' => trim(I('post.ucv')),
             'introduce' => trim(I('post.introduce')),
         );
+        if($data['hometown'] != null)
+            $data['perfect'] = 1;
         if(strlen($data['name']) == 0) {
             $this->error('姓名不能为空');
         }
@@ -204,10 +224,10 @@ class IndexController extends Controller {
 
     //完善信息页面
     public function information(){
-        if(session('issetopenid1') == 0) {
+        if(!session('carexbs')) {
             $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
         }
-        if(session('issetopenid2') == 0) {
+        if(!session('stu')) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(
@@ -218,10 +238,10 @@ class IndexController extends Controller {
 
     //显示详细信息页面
     public function showDetail(){
-        if(session('issetopenid1') == 0) {
+        if(!session('carexbs')) {
             $this->error('亲, 你还没有关注重邮小帮手(cyxbswx)哟~~');
         }
-        if(session('issetopenid2') == 0) {
+        if(!session('stu')) {
             $this->error('亲, 你还没有绑定学号哟~~ <br/> 请关注重邮小帮手(cyxbswx), 输入关键字"绑定"即可.');
         }
         $this->assign("info",M('message')->where(array(
@@ -335,6 +355,7 @@ class IndexController extends Controller {
      *
      * */
     public function getHeadImgUrl($openid){
+//        $openid = 'ouRCyjpvLulo8TzHsMmGY2bTP13c';
         $url = "http://Hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/userInfo";
         $timestamp = time();
         $string = "";
@@ -362,6 +383,41 @@ class IndexController extends Controller {
         curl_close($ch);
         //打印获得的数据
         $rel = json_decode($output);
+//        print_r($rel);
+        return $rel;
+    }
+
+    //关注认证
+    public function getOpenidVerify($openid){
+//        $openid = 'ouRCyjpvLulo8TzHsMmGY2bTP13c';
+        $url = "http://Hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/openidVerify";
+        $timestamp = time();
+        $string = "";
+        $arr = "abcdefghijklmnopqistuvwxyz0123456789ABCDEFGHIGKLMNOPQISTUVWXYZ";
+        for ($i=0; $i<16; $i++) {
+            $y = rand(0,41);
+            $string .= $arr[$y];
+        }
+        $secret = sha1(sha1($timestamp).md5($string).'redrock');
+        $post_data = array (
+            "timestamp" => $timestamp,
+            "string" => $string,
+            "secret" => $secret,
+            "openid" => $openid,
+            "token" => "gh_68f0a1ffc303",
+        );
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        // post数据
+        curl_setopt($ch, CURLOPT_POST, 1);
+        // post的变量
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+        $output = curl_exec($ch);
+        curl_close($ch);
+        //打印获得的数据
+        $rel = json_decode($output);
+//        print_r($rel);
         return $rel;
     }
 

@@ -1690,3 +1690,270 @@ NOTIC: [8] Undefined variable: map E:\wamp\www\luckofcqupt\Application\Home\Cont
 SQL: SELECT * FROM `knot_message` ORDER BY perfect desc LIMIT 40,10   [ RunTime:0.0000s ]
 NOTIC: [8] Undefined variable: data E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 119 行.
 
+[ 2015-06-18T18:03:02+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjo24q67OUj5uH-e-ra_Jcp8' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined property: stdClass::$type E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 69 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: map E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: SELECT * FROM `knot_message` ORDER BY perfect desc LIMIT 50,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 119 行.
+
+[ 2015-06-18T18:03:04+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjo24q67OUj5uH-e-ra_Jcp8' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined property: stdClass::$type E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 69 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: map E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: SELECT * FROM `knot_message` ORDER BY perfect desc LIMIT 60,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 119 行.
+
+[ 2015-06-18T18:03:07+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjo24q67OUj5uH-e-ra_Jcp8' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined property: stdClass::$type E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 69 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: map E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: SELECT * FROM `knot_message` ORDER BY perfect desc LIMIT 70,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 119 行.
+
+[ 2015-06-18T18:03:17+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `knot_message` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `knot_message` WHERE `openid` = 'ouRCyjo24q67OUj5uH-e-ra_Jcp8' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined property: stdClass::$type E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 69 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 73 行.
+NOTIC: [8] Undefined variable: map E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: SELECT * FROM `knot_message` ORDER BY perfect desc LIMIT 80,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\luckofcqupt\Application\Home\Controller\IndexController.class.php 第 119 行.
+
+[ 2015-06-18T18:05:33+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:35+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:36+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:37+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:37+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:38+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:38+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:38+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:40+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:41+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:41+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:41+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:42+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:42+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:42+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:42+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:42+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:49+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:50+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:50+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:50+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:50+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+
+[ 2015-06-18T18:05:50+08:00 ] 127.0.0.1 /luckofcqupt/Home/Index/findSchoolfellow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Base 'cyknot' inconnue
+

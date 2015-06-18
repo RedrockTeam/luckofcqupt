@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>首页</title>
-    <script src="/luckofcqupt/Public/js/lib/init.js"></script>
-    <link rel="stylesheet" type="text/css" href="/luckofcqupt/Public/css/lib/base.css">
-    <link rel="stylesheet" type="text/css" href="/luckofcqupt/Public/css/p_list.css">
+    <script src="/cyKnot/Public/js/lib/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="/cyKnot/Public/css/lib/base.css">
+    <link rel="stylesheet" type="text/css" href="/cyKnot/Public/css/p_list.css">
 </head>
 <body>
 <div class="s-wrap">
@@ -22,7 +22,7 @@
                 <a href="<?php echo U('Index/showDetail');?>?id=<?php echo ($vo["id"]); ?>">
                     <i class="s-icon" style="background-image: url(' <?php echo ($vo["photo"]); ?> ')"></i>
                     <aside>
-                        <h2 class="name"><span><?php echo ($vo['name']!=null?$vo['name']:'他还没填名字'); ?></span> <?php echo ($vo['sex']!='女'?'<i class="i_m"></i>':'<i class="i_w"></i>'); ?> <span class="s-sl">距离   100米<!--空格不要省略--></span></h2>
+                        <h2 class="name"><span><?php echo ($vo['name']!=null?$vo['name']:'他还没填名字'); ?></span> <?php echo ($vo['sex']!='女'?'<i class="i_m"></i>':'<i class="i_w"></i>'); ?> <span class="s-sl">距离   <?php echo ($vo['distance']); ?>米<!--空格不要省略--></span></h2>
                         <span class="trip s-gap"><?php echo ($vo["stuid"]); ?></span>
                         <span class="trip"><?php echo ($vo['college']?$vo['college']:'他还没填学院'); ?></span>
                     </aside>
@@ -53,5 +53,5 @@
     var type_path = '<?php echo U('Index/findSchoolfellow');?>';
     var people = '<?php echo U('Index/showDetail');?>';
 </script>
-<script src="/luckofcqupt/Public/js/p_list.js"></script>
+<script src="/cyKnot/Public/js/p_list.js"></script>
 </html>

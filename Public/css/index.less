@@ -1,11 +1,14 @@
 .g-container{
   width: 16rem;
   min-height: 100%;
-  background: url("../images/index/b_bg.jpg") no-repeat center top fixed;
+  background: url("../images/index/b_bg.jpg") no-repeat center bottom;
   position: absolute;
   left: 50%;
   margin-left: -8rem;
   background-size: cover;
+  padding-bottom: (97/ 640) * 16rem;
+  border: 1px solid red;
+
 }
 @media (min-width:540px){
   .g-container{
@@ -64,7 +67,6 @@
   font-family: "hiraginosansgb w3", "microsoft yahei";
 }
 .s-tips dt {
-  margin-bottom: (20/ 640) *16rem;
   font-size: (28/ 640) *16rem;
   text-align: center;
 }
@@ -72,7 +74,6 @@
 .s-tips dd{
   line-height: (40/ 640) *16rem;
   font-size: (26/ 640) *16rem;
-  //margin-bottom: (48/ 640) *16rem;
 }
 
 //.s-comp {

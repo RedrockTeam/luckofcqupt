@@ -1,11 +1,13 @@
 .g-container {
   width: 16rem;
   min-height: 100%;
-  background: url("../images/index/b_bg.jpg") no-repeat center top fixed;
+  background: url("../images/index/b_bg.jpg") no-repeat center bottom;
   position: absolute;
   left: 50%;
   margin-left: -8rem;
   background-size: cover;
+  padding-bottom: 2.425rem;
+  border: 1px solid red;
 }
 @media (min-width: 540px) {
   .g-container {
@@ -70,7 +72,6 @@
   font-family: "hiraginosansgb w3", "microsoft yahei";
 }
 .s-tips dt {
-  margin-bottom: 0.5rem;
   font-size: 0.7rem;
   text-align: center;
 }

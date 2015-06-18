@@ -1,7 +1,7 @@
 .g-container {
   width: 16rem;
   min-height: 100%;
-  background: url("../images/index/b_bg.jpg") no-repeat center bottom fixed;
+  background: url("../images/index/b_bg.jpg") no-repeat center top fixed;
   position: absolute;
   left: 50%;
   margin-left: -8rem;

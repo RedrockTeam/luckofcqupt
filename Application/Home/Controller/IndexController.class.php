@@ -86,6 +86,12 @@ class IndexController extends Controller {
                         $map['sex'] = '女';
 
                         break;
+                case 5: 
+                        $map['college'] = $info['college'];
+                        break;
+                case 6:
+                        $map['stuid'] = str_sub($info['stuid'], 4).'%';
+                        break;
                 default:
                         $map['openid'] = array('like', '%');
                         break;
@@ -163,6 +169,12 @@ class IndexController extends Controller {
                     $map['sex'] = '女';
 
                     break;
+                case 5: 
+                        $map['college'] = $info['college'];
+                        break;
+                case 6:
+                        $map['stuid'] = str_sub($info['stuid'], 4).'%';
+                        break;
                 default:
                     $map['openid'] = array('like', '%');
                     break;

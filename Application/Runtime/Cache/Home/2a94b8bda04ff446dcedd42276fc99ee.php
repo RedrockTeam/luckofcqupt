@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/cyKnot/Public/css/index.css">
 </head>
 <body>
+    <img src="/cyKnot/Public/images/index/share.jpg" style="width:300px;height:300px;display:none">
 <div class="g-container">
     <i class="s-logo"></i>
     <menu class="u-links">

@@ -2,11 +2,22 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
+    private $appid = 'wx81a4a4b77ec98ff4';
+    private $acess_token = 'gh_68f0a1ffc303';
+    private $wx_url = 'http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/';
     /**
      * 这代码太渣了, 没时间重构了, 怎么快怎么来
      */
     //显示主页
     public function index(){
+//        $code = I('get.code');
+//        if($code == null){
+//            return redirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=http%3a%2f%2fhongyan.cqupt.edu.cn%2fgame%2fpublic%2frealtakephotos&response_type=code&scope=snsapi_userinfo&state=sfasdfasdfefvee#wechat_redirect");
+//        }else{
+//            session('code', $code);
+//            $return =  json_decode($this->getOpenId());
+//            $openid = $return->data->openid;
+//        }
         $openid = I('get.openid');
         $info = $this->bindVerify($openid);
         $care = $this->getOpenidVerify($openid);
@@ -513,4 +524,24 @@ class IndexController extends Controller {
         return $rel;
     }
 
+//    private function getOpenId () {
+//        $code = Session('code');
+//        $time=time();
+//        $str = 'abcdefghijklnmopqrstwvuxyz1234567890ABCDEFGHIJKLNMOPQRSTWVUXYZ';
+//        $string='';
+//        for($i=0;$i<16;$i++){
+//            $num = mt_rand(0,61);
+//            $string .= $str[$num];
+//        }
+//        $secret =sha1(sha1($time).md5($string)."redrock");
+//        $t2 = array(
+//            'timestamp'=>$time,
+//            'string'=>$string,
+//            'secret'=>$secret,
+//            'token'=>$this->acess_token,
+//            'code' => $code,
+//        );
+//        $url = "http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/webOauth";
+//        return json_encode($this->curl_api($url, $t2));
+//    }
 }

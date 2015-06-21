@@ -12,7 +12,7 @@ class IndexController extends Controller {
     public function index(){
         $code = I('get.code');
         if($code == null){
-            return redirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=hongyan.cqupt.edu.cn%2fcquptluck%2fHome%2fIndex%2findex.html&response_type=code&scope=snsapi_userinfo&state=sfasdfasdfefvee#wechat_redirect");
+            return redirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=http%3a%2f%2fhongyan.cqupt.edu.cn%2fcquptluck%2fHome%2fIndex%2findex.html&response_type=code&scope=snsapi_userinfo&state=sfasdfasdfefvee#wechat_redirect");
         }else{
             session('code', $code);
             $return =  json_decode($this->getOpenId());

@@ -56,6 +56,7 @@ class IndexController extends Controller {
             }
         }
         $address = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        var_dump($address);
         $signature = $this->signature($address);
         $this->assign('signature', $signature);
         $this->display("index");

@@ -206,7 +206,12 @@ class IndexController extends Controller {
         $count = count($sf);
         for ($i=0; $i<$count; $i++){
             $pos_fri = $this->getLocation($sf[$i]['openid']);
+            if($pos_fri['lat'] == null) {
+                $sf[$i]['distance'] = '未知';
+            }
+            else{
             $sf[$i]['distance'] = $this->computeDis($pos_tar['lat'], $pos_fri['lat'], $pos_tar['long'], $pos_fri['long']);
+            }
         }
         foreach($sf as $v){
             $v['stuid'] = substr($v['stuid'], 0, 4).'级';//直接转换年级 20xx级

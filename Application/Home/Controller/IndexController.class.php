@@ -55,6 +55,8 @@ class IndexController extends Controller {
                 }
             }
         }
+        $signature = $this->signature();
+        $this->assign('signature', $signature);
         $this->display("index");
     }
 
@@ -147,8 +149,7 @@ class IndexController extends Controller {
         }
         //flag检测家乡填没
 
-        $signature = $this->signature();
-        $this->assign('signature', $signature);
+
         $this->assign('flag', $flag);
         $this->assign('friend', $data);
         $this->display();

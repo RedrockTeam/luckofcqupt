@@ -583,7 +583,7 @@ class IndexController extends Controller {
         //打印获得的数据
         $rel = json_decode($output);
         $ticket = $rel->data;
-        $key = "jsapi_ticket=$ticket&noncestr=$string&timestap=$timestamp&url=$address";
+        $key = "jsapi_ticket=bxLdikRXVbTPdHSM05e5u-D9iUn5dcDybG9KGO7uW1uNH4pse8NFBYHvGd4XYAZ-cYrFYi8X8f0lMw1pMml_lw&noncestr=$string&timestap=$timestamp&url=$address";
         $data['ticket'] = $ticket;
         $data['timestamp'] = $timestamp;
         $data['string'] = $string;

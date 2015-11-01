@@ -263,6 +263,7 @@ class IndexController extends Controller {
             'contact' => trim(I('post.connect')),
             'way' => trim(I('post.ucv')),
             'introduce' => trim(I('post.introduce')),
+            'is_dog'  => trim(I('post.is_dog'))
         );
         if($data['hometown'] != null)
             $data['perfect'] = 1;

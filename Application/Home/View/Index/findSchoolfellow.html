@@ -24,7 +24,7 @@
                     <i class="s-icon" style="background-image: url(' {$vo.photo} ')"></i>
                     <aside>
                         <h2 class="name"><span>{$vo['name']!=null?$vo['name']:'他还没填名字'}</span> {$vo['sex']!='女'?'<i class="i_m"></i>':'<i class="i_w"></i>'}
-                        {$vo['is_dog'] != '' ? '' : '<i class="i_dog">未脱单</i>'}
+                        {$vo['is_dog'] != 0 ? '' : '<i class="i_dog">未脱单</i>'}
                         <span class="s-sl">距离   {$vo['distance']}米<!--空格不要省略--></span></h2>
                         <span class="trip s-gap">{$vo.stuid}</span>
                         <span class="trip">{$vo['college']?$vo['college']:'他还没填学院'}</span>

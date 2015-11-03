@@ -136,6 +136,22 @@
                 <input name="introduce" type="text" class="need_input"
                 <if condition="$info[0]['introduce']"> value="{$info[0]['introduce']}"<else />placeholder='输入简介'</if> />
             </div>
+            <div class="item">
+                <span class="filed_name">参与脱单</span>
+                <div class="de_label">
+                   <span class="js-label_way">
+                        <if condition="$info[0]['sex']">
+                            {$info[0]['sex']}
+                            <else />
+                            是
+                        </if>
+                   </span>
+                    <i class="s-arrow"></i></div>
+                <select name="is_dog" id="s_dog" class="select_cahnge js-c_way">
+                    <option value="是" {$info[0]['sex'] == '是'? "selected='selected'" : ''}>是</option>
+                    <option value="否" {$info[0]['sex'] == '否'? "selected='selected'" : ''}>否</option>
+                </select>
+            </div>
             <div class="upload_img js-up_hcon">
                 上传图片(默认为微信头像)
                 <input type="file" name="photo" class="u-fup"/>

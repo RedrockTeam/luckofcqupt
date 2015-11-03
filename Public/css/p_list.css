@@ -119,15 +119,25 @@
   display: inline-block;
   width: 0.875rem;
   height: 0.55rem;
-  background: url("../images/p_list/man.png") no-repeat center center;
+  line-height: 0.55rem;
+  text-align: center;
+  color: #fff;
   background-size: cover;
   transform: translateY(-0.08rem) scale(1.4);
   -webkit-transform: translateY(-0.08rem) scale(1.4);
   -ms-transform: translateY(-0.08rem) scale(1.4);
   -moz-transform: translateY(-0.08rem) scale(1.4);
 }
+.u-item .name .i_m {
+  background: url("../images/p_list/man.png") no-repeat center center;
+}
+.u-item .name .i_dog {
+  width: 1.6rem;
+  background-color: red;
+  font-size: 0.45rem;
+}
 .u-item .name .i_w {
-  background-image: url("../images/p_list/woman.png");
+  background: url("../images/p_list/woman.png") no-repeat center center;
 }
 .u-item .name .s-sl {
   position: absolute;

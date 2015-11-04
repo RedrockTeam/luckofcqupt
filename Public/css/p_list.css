@@ -133,6 +133,7 @@
 }
 .u-item .name .i_dog {
   width: 1.2rem;
+  margin-left: 5px;
   background-color: red;
   font-size: 0.3rem;
 }

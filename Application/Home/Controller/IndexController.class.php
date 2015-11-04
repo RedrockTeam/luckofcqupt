@@ -20,8 +20,6 @@ class IndexController extends Controller {
         }
 //        $openid = I('get.openid');
         $info = $this->bindVerify($openid);
-        var_dump($info);
-        return;
         $care = $this->getOpenidVerify($openid);
         if ($info->status != '200') {//绑定学号没
             session('stu', false);

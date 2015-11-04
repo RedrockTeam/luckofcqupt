@@ -129,7 +129,7 @@
   -moz-transform: translateY(-0.08rem) scale(1.4);*/
 }
 .u-item .name .i_dog, .u-item .name .i_m, .u-item .name .i_w {
-  padding: 0.2rem;
+  padding: 0 0.2rem;
   margin-left: 10px;
   background-color: #ff5d64;
   font-size: 0.4rem;

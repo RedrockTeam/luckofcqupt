@@ -128,17 +128,19 @@
   -ms-transform: translateY(-0.08rem) scale(1.4);
   -moz-transform: translateY(-0.08rem) scale(1.4);*/
 }
-.u-item .name .i_m {
-  background-color: ##0099FF;
-  /*background: url("../images/p_list/man.png") no-repeat center center;*/
-}
 .u-item .name .i_dog, .u-item .name .i_m, .u-item .name .i_w {
   width: 1.2rem;
   margin-left: 20px;
   background-color: #ff5d64;
-  font-size: 0.3rem;
+  font-size: 0.4rem;
+}
+.u-item .name .i_m {
+  margin-left: 0;
+  background-color: ##0099FF;
+  /*background: url("../images/p_list/man.png") no-repeat center center;*/
 }
 .u-item .name .i_w {
+  margin-left: 0;
   background-color: ##FF6699;
   /*background: url("../images/p_list/woman.png") no-repeat center center;*/
 }

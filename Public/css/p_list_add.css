@@ -129,16 +129,17 @@
   -moz-transform: translateY(-0.08rem) scale(1.4);
 }
 .u-item .name .i_m {
+  margin-top: 5px;
   background: url("../images/p_list/man.png") no-repeat center center;
 }
 .u-item .name .i_dog {
   width: 1.2rem;
   margin-left: 20px;
-  margin-top: -5px;
-  background-color: red;
+  background-color: #ff5d64;
   font-size: 0.3rem;
 }
 .u-item .name .i_w {
+  margin-top: 5px;
   background: url("../images/p_list/woman.png") no-repeat center center;
 }
 .u-item .name .s-sl {

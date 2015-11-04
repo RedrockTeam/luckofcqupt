@@ -27,6 +27,8 @@ class IndexController extends Controller {
         else{
             session('stu', true);
         }
+        var_dump($care);
+        return;
         if ($care->status != '200') {//关注小帮手没
             session('carexbs', false);
         }

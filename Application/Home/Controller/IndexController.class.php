@@ -119,12 +119,9 @@ class IndexController extends Controller {
             $map['sex'] = $gender;
         }
         $pos_tar = $this->getLocation(session('info')['openid']);
-        var_dump($type);
         $post = json_decode(strip_tags(file_get_contents("php://input")));
         $page = $post->page? $post->page:1;
         $offset = ($page - 1) * 10;//分页
-        var_dump($map);
-        return;
         $sf = M('message')
             ->where($map) //todo 筛选!
             ->order("perfect desc")

@@ -590,12 +590,13 @@ class IndexController extends Controller {
         curl_close($ch);
         //打印获得的数据
         $rel = json_decode($output);
-        $ticket = $rel->data;
-        $key = "jsapi_ticket=$ticket&noncestr=$string&timestap=$timestamp&url=$address";
-        $data['ticket'] = $ticket;
-        $data['timestamp'] = $timestamp;
-        $data['string'] = $string;
-        $data['signature'] = sha1($key);
+        var_dump($rel);
+        $jsapi_ticket = $rel->data;
+        $data['jsapi_ticket'] = $jsapi_ticket;
+        $data['noncestr'] = $string->randString();
+        $data['timestamp'] = time();
+        $data['url'] = 'http://'.$_SERVER['HTTP_HOST'].__SELF__;//生成当前页面url
+        $data['signature'] = sha1($this->ToUrlParams($data));
         return $data;
     }
 

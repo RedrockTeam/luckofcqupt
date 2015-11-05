@@ -112,7 +112,10 @@ class IndexController extends Controller {
                         break;
             }
         }
-
+        if($type->is_dog){
+            $gender = $info['sex'] == '男'? '女' : '男';
+            $map['sex'] = $gender;
+        }
         $pos_tar = $this->getLocation(session('info')['openid']);
 
         $post = json_decode(strip_tags(file_get_contents("php://input")));
@@ -241,7 +244,6 @@ class IndexController extends Controller {
         $this->assign('friend', $data);
         $this->display('findSchoolfellow');
     }
-
     //完善信息表单提交处理
     public function perfectInfo(){
         $exixtUser = M('message')->where(array(

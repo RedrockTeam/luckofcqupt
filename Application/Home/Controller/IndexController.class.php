@@ -7,6 +7,8 @@ class IndexController extends Controller {
     private $wx_url = 'http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/';
     /**
      * 这代码太渣了, 没时间重构了, 怎么快怎么来
+     * 妈的, 逼不得已加了新功能
+     * 我绝对不会承认这代码是我的, 妈逼
      */
     //显示主页
     public function index(){

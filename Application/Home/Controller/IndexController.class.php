@@ -57,7 +57,7 @@ class IndexController extends Controller {
                 }
             }
         }
-        $address = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        $address = 'http://'.$_SERVER['HTTP_HOST'].__SELF__;;
 //        var_dump($address);
         $signature = $this->signature($address);
         $this->assign('signature', $signature);
@@ -614,4 +614,26 @@ class IndexController extends Controller {
             curl_close($ch);
             return $contents;
         }
+    public function JSSDKSignature(){
+        $string = new String();
+        $url = 'http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/apiJsTicket';
+        $jsapi_ticket =  M('token')->where(['type' => 'js_ticket'])->getField('token');
+        $data['jsapi_ticket'] = $jsapi_ticket;
+        $data['noncestr'] = $string->randString();
+        $data['timestamp'] = time();
+        $data['url'] = 'http://'.$_SERVER['HTTP_HOST'].__SELF__;//生成当前页面url
+        $data['signature'] = sha1($this->ToUrlParams($data));
+        return $data;
+    }
+    private function ToUrlParams($urlObj){
+        $buff = "";
+        foreach ($urlObj as $k => $v) {
+            if($k != "signature") {
+                $buff .= $k . "=" . $v . "&";
+            }
+        }
+        $buff = trim($buff, "&");
+        return $buff;
+    }
+
 }

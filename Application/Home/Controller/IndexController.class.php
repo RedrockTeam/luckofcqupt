@@ -112,7 +112,7 @@ class IndexController extends Controller {
                         break;
             }
         }
-        if($type->is_dog){
+        if($type->is_dog || I('get.is_dog_page')){
             $gender = $info['sex'] == '男'? '女' : '男';
             $map['sex'] = $gender;
         }
@@ -157,6 +157,9 @@ class IndexController extends Controller {
 
         $this->assign('flag', $flag);
         $this->assign('friend', $data);
+        if(I('get.is_dog_page')) {
+            $this->display('is_dog');
+        }
         $this->display();
     }
 

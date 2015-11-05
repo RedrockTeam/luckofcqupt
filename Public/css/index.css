@@ -28,11 +28,11 @@
   background: url("../images/index/goto-dog.png") no-repeat center center;
   background-size: 100% 100%;
   float: right;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
   margin-right: 2rem;
 }
 .u-links {
-  margin-top: 3.5rem;
+  margin-top: 3rem;
 }
 .u-links a {
   display: block;

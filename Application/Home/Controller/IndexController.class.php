@@ -161,6 +161,7 @@ class IndexController extends Controller {
         $this->assign('friend', $data);
         if(I('get.is_dog_page')) {
             $this->display('is_dog');
+            return;
         }
         $this->display();
     }

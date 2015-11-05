@@ -23,7 +23,7 @@
                 <a href="{:U('Index/showDetail')}?id={$vo.id}">
                     <i class="s-icon" style="background-image: url(' {$vo.photo} ')"></i>
                     <aside>
-                        <h2 class="name"><span>{$vo['name']!=null?$vo['name']:'他还没填名字'}</span> {$vo['sex']!='女'?'<i class="i_m">男</i>':'<i class="i_w">女</i>'}
+                        <h2 class="name"><span>{$vo['name']!=null?$vo['name']:'他还没填名字'}</span> {$vo['sex']!='女'?'<i class="i_m iconfont">&#xe604;</i>':'<i class="i_w iconfont">&#xe603;</i>'}
                         {$vo['is_dog'] == 0 ? '' : '<i class="i_dog">未脱单</i>'}
                         <span class="s-sl">距离   {$vo['distance']}米<!--空格不要省略--></span></h2>
                         <span class="trip s-gap">{$vo.stuid}</span>

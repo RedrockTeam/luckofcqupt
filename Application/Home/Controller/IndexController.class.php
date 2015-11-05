@@ -58,8 +58,7 @@ class IndexController extends Controller {
                 }
             }
         }
-        $address = 'http://'.$_SERVER['HTTP_HOST'].__SELF__;;
-        var_dump($address);
+        $address = 'http://'.$_SERVER['HTTP_HOST'].__SELF__;
         $signature = $this->signature($address);
         $this->assign('signature', $signature);
         $this->display("index");
@@ -591,7 +590,6 @@ class IndexController extends Controller {
         curl_close($ch);
         //打印获得的数据
         $rel = json_decode($output);
-        var_dump($rel);
         $string = new String();
         $jsapi_ticket = $rel->data;
         $data['jsapi_ticket'] = $jsapi_ticket;

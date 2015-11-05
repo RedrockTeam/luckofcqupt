@@ -23,14 +23,15 @@
 }
 .goto-dog {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 10rem;
+  height: 10rem;
   background: url("../images/index/goto-dog.png") no-repeat center center;
   float: right;
+  margin-top: -2rem;
   margin-right: 2rem;
 }
 .u-links {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 .u-links a {
   display: block;

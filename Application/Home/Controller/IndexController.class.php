@@ -1,5 +1,6 @@
 <?php
 namespace Home\Controller;
+use Org\Util\String;
 use Think\Controller;
 class IndexController extends Controller {
     private $appid = 'wx81a4a4b77ec98ff4';
@@ -591,6 +592,7 @@ class IndexController extends Controller {
         //打印获得的数据
         $rel = json_decode($output);
         var_dump($rel);
+        $string = new String();
         $jsapi_ticket = $rel->data;
         $data['jsapi_ticket'] = $jsapi_ticket;
         $data['noncestr'] = $string->randString();

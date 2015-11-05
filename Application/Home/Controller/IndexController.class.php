@@ -123,7 +123,8 @@ class IndexController extends Controller {
         $post = json_decode(strip_tags(file_get_contents("php://input")));
         $page = $post->page? $post->page:1;
         $offset = ($page - 1) * 10;//分页
-
+        var_dump($map);
+        return;
         $sf = M('message')
             ->where($map) //todo 筛选!
             ->order("perfect desc")

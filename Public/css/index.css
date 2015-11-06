@@ -19,7 +19,7 @@
   height: 2.425rem;
   background: url("../images/index/logo.png") no-repeat center center;
   background-size: contain;
-  margin: 1.825rem auto 0;
+  margin: 1.825rem auto 0 auto;
 }
 .goto-dog {
   display: block;
@@ -28,7 +28,6 @@
   background: url("../images/index/goto-dog.png") no-repeat center center;
   background-size: 100% 100%;
   float: right;
-  margin-top: -1.5rem;
   margin-right: 2rem;
 }
 .u-links {

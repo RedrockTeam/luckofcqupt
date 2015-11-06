@@ -117,6 +117,7 @@ class IndexController extends Controller {
         if($type->is_dog || I('get.is_dog_page')){
             $gender = $info['sex'] == '男'? '女' : '男';
             $map['sex'] = $gender;
+            $map['is_dog'] = 1;
         }
         $pos_tar = $this->getLocation(session('info')['openid']);
         $post = json_decode(strip_tags(file_get_contents("php://input")));

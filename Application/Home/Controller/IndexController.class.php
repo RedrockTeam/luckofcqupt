@@ -1,5 +1,6 @@
 <?php
 namespace Home\Controller;
+use Org\Util\String;
 use Think\Controller;
 class IndexController extends Controller {
     private $appid = 'wx81a4a4b77ec98ff4';
@@ -57,8 +58,7 @@ class IndexController extends Controller {
                 }
             }
         }
-        $address = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-//        var_dump($address);
+        $address = 'http://'.$_SERVER['HTTP_HOST'].__SELF__;
         $signature = $this->signature($address);
         $this->assign('signature', $signature);
         $this->display("index");
@@ -590,12 +590,13 @@ class IndexController extends Controller {
         curl_close($ch);
         //打印获得的数据
         $rel = json_decode($output);
-        $ticket = $rel->data;
-        $key = "jsapi_ticket=$ticket&noncestr=$string&timestap=$timestamp&url=$address";
-        $data['ticket'] = $ticket;
-        $data['timestamp'] = $timestamp;
-        $data['string'] = $string;
-        $data['signature'] = sha1($key);
+        $string = new String();
+        $jsapi_ticket = $rel->data;
+        $data['jsapi_ticket'] = $jsapi_ticket;
+        $data['noncestr'] = $string->randString();
+        $data['timestamp'] = time();
+        $data['url'] = 'http://'.$_SERVER['HTTP_HOST'].__SELF__;//生成当前页面url
+        $data['signature'] = sha1($this->ToUrlParams($data));
         return $data;
     }
 
@@ -614,4 +615,26 @@ class IndexController extends Controller {
             curl_close($ch);
             return $contents;
         }
+    public function JSSDKSignature(){
+        $string = new String();
+        $url = 'http://hongyan.cqupt.edu.cn/MagicLoop/index.php?s=/addon/Api/Api/apiJsTicket';
+        $jsapi_ticket =  M('token')->where(['type' => 'js_ticket'])->getField('token');
+        $data['jsapi_ticket'] = $jsapi_ticket;
+        $data['noncestr'] = $string->randString();
+        $data['timestamp'] = time();
+        $data['url'] = 'http://'.$_SERVER['HTTP_HOST'].__SELF__;//生成当前页面url
+        $data['signature'] = sha1($this->ToUrlParams($data));
+        return $data;
+    }
+    private function ToUrlParams($urlObj){
+        $buff = "";
+        foreach ($urlObj as $k => $v) {
+            if($k != "signature") {
+                $buff .= $k . "=" . $v . "&";
+            }
+        }
+        $buff = trim($buff, "&");
+        return $buff;
+    }
+
 }

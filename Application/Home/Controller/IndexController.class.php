@@ -15,7 +15,7 @@ class IndexController extends Controller {
     public function index(){
         $code = I('get.code');
         if($code == null){
-            $redirect = 'http://'.$_SERVER['HTTP_HOST'].__SELF__;
+            $redirect = urlencode('http://'.$_SERVER['HTTP_HOST'].__SELF__);
             return redirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=$this->appid&redirect_uri=$redirect&response_type=code&scope=snsapi_userinfo&state=sfasdfasdfefvee#wechat_redirect");
         }else{
             session('code', $code);
